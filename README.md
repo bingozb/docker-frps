@@ -33,7 +33,7 @@ bingozb/frps
 [common]
 bind_addr = 0.0.0.0
 bind_port = 7000
-vhost_http_port = 80
+vhost_http_port = 10080
 dashboard_port = 7500
 dashboard_user = deploy
 dashboard_pwd = 01234567a
@@ -49,7 +49,7 @@ If you want to modify configuration, you can volume your own `frps.ini` via tag 
 ```sh
 $ docker run --restart always -d \
 --name frps \
--p 10080:80 -p 7000:7000 -p 7500:7500 \
+-p 10080:10080 -p 7000:7000 -p 7500:7500 \
 -v /path/to/frps.ini:/frps.ini \
 bingozb/frps
 ```

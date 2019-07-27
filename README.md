@@ -25,7 +25,7 @@ You can run a frps container with default config.
 ```sh
 $ sudo docker run --restart always -d \
 --name frps \
--p 10080:80 -p 7000:7000 -p 7500:7500 \
+-p 10080:10080 -p 7000:7000 -p 7500:7500 \
 bingozb/frps
 ```
 
